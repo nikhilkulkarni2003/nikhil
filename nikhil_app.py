@@ -10,4 +10,4 @@ checkpoint_path = "./cp.weights.h5"
 cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,
                                                  save_weights_only=True,
                                                  verbose=1)
-model_rlr = ReduceLROnPlateau(monitor='val_loss', factor=0.3, patience=15, verbose=True)
+model_rlr = ReduceLROnPlateau(monitor='val_loss',factor=0.3, patience=15,verbose=True)
